@@ -3,7 +3,10 @@
 .page {
   max-inline-size: 767px;
   min-inline-size: 375px;
-  min-block-size: min(100%, 1023px);
+  max-block-size: 1023px;
+  min-block-size: 668px;
+  display: grid;
+  gap: 40px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -12,7 +15,28 @@
   block-size: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content min-content;
   padding: 10px 10px 66px;
   background-image: url(../images/cover-image-dark.png);
- 
+  object-fit: contain;
+}
+
+.header-heading {
+  color: var(--main-heading-color);
+  font-size: var(--main-heading-font-size);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 83%;
+  font-weight: var(--bold-weight);
+  margin-top: 66.5px;
+}
+
+.header-text {
+  color: #000;
+  font-size: var(--text-font-size);  
+  font-weight: var(--bold-weight);
+  background-color: var(--accent-color);
+  line-height: 130%;
+  padding: 0;
+  margin-top: 55px;
+  
 }
