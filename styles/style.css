@@ -1,5 +1,19 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  inline-size: min(375px, 767px);
+  block-size: min(668px, 1023px);
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
+  background-size: 100%;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header {
+  inline-size: 100%;
+  block-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px 10px 66px;
+  background-image: ;
 }
