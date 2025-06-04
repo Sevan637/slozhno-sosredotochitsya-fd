@@ -1,13 +1,23 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: 'IBM Plex mono', serif;
+
+/*
   max-inline-size: 767px;
   min-inline-size: 375px;
   max-block-size: 1023px;
   min-block-size: 668px;
+  */
+  inline-size: 375px;
+  block-size: 668px;
   display: grid;
   gap: 40px;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.title-decor {
+  background-color: var(--accent-color)
 }
 
 .header {
@@ -15,10 +25,78 @@
   block-size: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr min-content min-content;
+  grid-template-rows: 26px 1fr min-content min-content;
   padding: 10px 10px 66px;
   background-image: url(../images/cover-image-dark.png);
-  object-fit: contain;
+  object-fit: cover;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  top: 10px; 
+  right: 10px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  bottom: 10px; 
+  left: 10px;
+}
+
+
+.accent-decoration {
+  display:inline-block;
+  justify-self: end;
+  margin-right: 28px;
+  color: var(--accent-color);
+  line-height: 138.889%;
+  font-weight: var(--normal-weight);
+  position: relative;
+}
+
+.accent-decoration::after { 
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+   box-shadow: 0 0 4px 2px var(--accent-color);
+   position: absolute;
+   top: 5px; 
+   right: -18px;
+
+}
+
+
+.header__theme-menu {
+  place-self: end;
+  margin-top: 39px;
+}
+
+.header__theme-menu-item:not(:last-of-type) {
+  margin-bottom: 13px; 
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  font-size: var(--text-font-size);  
+  font-weight: var(--normal-weight);
+  line-height: 0;
+  
 }
 
 .header-heading {
@@ -34,7 +112,6 @@
   color: #000;
   font-size: var(--text-font-size);  
   font-weight: var(--bold-weight);
-  background-color: var(--accent-color);
   line-height: 130%;
   padding: 0;
   margin-top: 55px;
