@@ -15,6 +15,7 @@
   block-size: 668px;
   display: grid;
   gap: 40px;
+  letter-spacing: var(--standart-letter-spacing);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -110,10 +111,6 @@
 }
 
 .header-text {
-  color: #000;
-  font-size: var(--text-font-size);  
-  font-weight: var(--bold-weight);
-  line-height: 130%;
   padding: 0;
   margin-top: 55px;
 }
@@ -126,7 +123,54 @@
   gap: 50px;
 }
 
+.main-section-title, .main-section-text .header-text {
+   font-size: var(--text-font-size);
+   line-height: var(--standart-line-height);
+   font-weight: var(--bold-weight);
+
+}
+
 .main-section-main-title {
-  font-size: var(--text-font-size);
   color: var(--accent-color);
+}
+
+.main-section-secondary-title {
+  color: inherit;
+}
+
+.secondary-title-advice {
+  color: inherit;
+  font-weight: var(--normal-weight);
+}
+
+.main-section-text {
+  color: var(--text-color);
+  font-weight: var(--normal-weight);
+}
+
+.accent-decorated-word {
+  text-shadow: 2px 1.5px 0 var(--accent-color);
+}
+
+.main-section-text-link {
+  text-decoration: none;
+}
+
+
+.main-section-main-title, .main-section-secondary-title, p.main-section-text:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.main-section-title.title-decor:not(.main-section-secondary-title) {
+  margin-bottom: 10px;
+}
+
+.picture-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gallery-image {
+  width: 100%;
+  object-fit: cover;
 }
