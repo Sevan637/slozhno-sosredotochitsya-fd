@@ -10,12 +10,14 @@
   min-block-size: 668px;
   */
   background-image: url(../images/cover-image-dark.png);
+  object-fit: cont;
   background-attachment: fixed;
   inline-size: 375px;
   block-size: 668px;
   display: grid;
   gap: 40px;
   letter-spacing: var(--standart-letter-spacing);
+  padding: 0 10px 0;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -161,13 +163,14 @@
   margin-bottom: 20px;
 }
 
-.main-section-title.title-decor:not(.main-section-secondary-title) {
+.main-section-title.title-decor:not(.main-section-secondary-title), .gallery-title {
   margin-bottom: 10px;
 }
 
 .picture-gallery {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .gallery-image {
