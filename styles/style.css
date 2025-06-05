@@ -9,6 +9,8 @@
   max-block-size: 1023px;
   min-block-size: 668px;
   */
+  background-image: url(../images/cover-image-dark.png);
+  background-attachment: fixed;
   inline-size: 375px;
   block-size: 668px;
   display: grid;
@@ -27,7 +29,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: 26px 1fr min-content min-content;
   padding: 10px 10px 66px;
-  background-image: url(../images/cover-image-dark.png);
   object-fit: cover;
   position: relative;
 }
