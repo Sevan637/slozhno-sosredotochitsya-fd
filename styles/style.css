@@ -12,10 +12,10 @@
  
   inline-size: 375px;
   block-size: 668px;
-  /* background-image: url(../images/cover-image-dark.png); 
+  background-image: url(../images/cover-image-dark.png); 
   object-fit: contain;
   background-position: center;
-  background-attachment: fixed; */
+  background-attachment: fixed; 
   display: grid;
   gap: 40px;
   letter-spacing: var(--standart-letter-spacing);
@@ -48,8 +48,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
   top: 10px; 
   right: 10px;
 }
@@ -59,8 +59,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
   bottom: 10px; 
   left: 10px;
 }
@@ -68,12 +68,16 @@
 
 .accent-decoration {
   display:inline-block;
-  justify-self: end;
-  margin-right: 28px;
+  position: relative;
+}
+
+.accent-decoration::before {
+  content: 'REC';
   color: var(--accent-color);
   line-height: 138.889%;
   font-weight: var(--normal-weight);
-  position: relative;
+  position: absolute;
+  right: 28px;
 }
 
 .accent-decoration::after { 
@@ -85,11 +89,10 @@
   border-radius: 50%;
    box-shadow: 0 0 4px 2px var(--accent-color);
    position: absolute;
-   top: 5px; 
-   right: -18px;
+   top: 8px; 
+   right: 8px;
 
 }
-
 
 .header__theme-menu {
   place-self: end;
@@ -204,7 +207,7 @@
 .footer-title {
   color: var(--main-heading-color);
   font-size: var(--main-heading-font-size);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   line-height: 83%;
   font-weight: var(--bold-weight);
 }
