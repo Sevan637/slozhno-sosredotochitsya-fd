@@ -9,34 +9,41 @@
   max-block-size: 1023px;
   min-block-size: 668px;
   */
-  background-image: url(../images/cover-image-dark.png);
-  object-fit: cont;
-  background-attachment: fixed;
+ 
   inline-size: 375px;
   block-size: 668px;
+  /* background-image: url(../images/cover-image-dark.png); 
+  object-fit: contain;
+  background-position: center;
+  background-attachment: fixed; */
   display: grid;
   gap: 40px;
   letter-spacing: var(--standart-letter-spacing);
-  padding: 0 10px 0;
+
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .title-decor {
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
+}
+.header, .main, .footer {
+  background-color: aquamarine;
+
+
 }
 
 .header {
   inline-size: 100%;
-  block-size: 100%;
+  block-size: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 26px 1fr min-content min-content;
+  grid-template-rows: repeat(4, auto);
   padding: 10px 10px 66px;
   object-fit: cover;
   position: relative;
 }
 
-.header::after {
+.corner-decor::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -47,7 +54,7 @@
   right: 10px;
 }
 
-.header::before {
+.corner-decor::before {
   content: '';
   position: absolute;
   width: 25px;
@@ -103,7 +110,7 @@
   
 }
 
-.header-heading {
+.header-title {
   color: var(--main-heading-color);
   font-size: var(--main-heading-font-size);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -113,6 +120,8 @@
 }
 
 .header-text {
+  font-size: var(--text-font-size);
+  font-weight: var(--bold-weight);
   padding: 0;
   margin-top: 55px;
 }
@@ -120,9 +129,11 @@
 /* Здесь начинаются свойства для секции main */
 
 .main {
+  inline-size: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
+  padding: 0 10px 0;
 }
 
 .main-section-title, .main-section-text .header-text {
@@ -177,3 +188,24 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* Стили для футера */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 100vh;
+  position: relative;
+  padding: 10px;
+}
+
+.footer-title {
+  color: var(--main-heading-color);
+  font-size: var(--main-heading-font-size);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 83%;
+  font-weight: var(--bold-weight);
+}
+
