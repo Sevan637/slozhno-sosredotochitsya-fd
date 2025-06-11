@@ -109,8 +109,16 @@
   border: none;
   font-size: var(--text-font-size);  
   font-weight: var(--normal-weight);
-  line-height: 0;
-  
+}
+
+.header__theme-menu-button:hover {
+  --accent-color: rgba(255, 0, 112, 0,4);
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+
 }
 
 .header-title {
