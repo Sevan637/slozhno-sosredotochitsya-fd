@@ -111,15 +111,14 @@
   font-weight: var(--normal-weight);
 }
 
-.header__theme-menu-button:hover {
-  --accent-color: rgba(255, 0, 112, 0,4);
-  border: 1px solid var(--accent-color);
-}
-
 .header__theme-menu-button_active {
   outline: 1px solid var(--accent-color);
-
 }
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+  opacity: 0.4;
+}  
 
 .header-title {
   color: var(--main-heading-color);
