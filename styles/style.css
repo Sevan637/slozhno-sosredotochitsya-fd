@@ -116,9 +116,13 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
-  opacity: 0.4;
+  outline: 1px solid rgb(255, 0, 112, 0.4);
 }  
+
+.header__theme-menu-button:focus {
+  outline: none;
+  text-decoration: underline solid var(--accent-color);
+}
 
 .header-title {
   color: var(--main-heading-color);
@@ -177,6 +181,14 @@
 
 .main-section-text-link {
   text-decoration: none;
+}
+
+.main-section-text-link:hover {
+  text-decoration: underline solid var(--text-color);
+}
+
+.main-section-text-link:focus {
+  outline: 1px solid var(--text-color);
 }
 
 
