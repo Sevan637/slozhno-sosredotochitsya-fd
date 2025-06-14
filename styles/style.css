@@ -10,12 +10,13 @@
   min-block-size: 668px;
   */
  
-  inline-size: 375px;
+  inline-size: 300px;
   block-size: 668px;
-  background-image: url(../images/cover-image-dark.png); 
+  background-color: blue;
+  /* background-image: url(../images/cover-image-dark.png); 
   object-fit: contain;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed; */
   display: grid;
   gap: 40px;
   letter-spacing: var(--standart-letter-spacing);
@@ -27,8 +28,7 @@
   background-color: var(--accent-color);
 }
 .header, .main, .footer {
-  background-color: aquamarine;
-
+  background-color: white;
 
 }
 
