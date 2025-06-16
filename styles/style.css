@@ -10,7 +10,7 @@
   min-block-size: 668px;
   */
  
-  inline-size: 370px;
+  inline-size: 375px;
   block-size: 668px;
   background-color: blue;
   /* background-image: url(../images/cover-image-dark.png); 
@@ -138,6 +138,9 @@
   font-weight: var(--bold-weight);
   padding: 0;
   margin-top: 55px;
+  line-height: var(--standart-line-height);
+  align-self: end;
+  justify-self: start;
 }
 
 /* Здесь начинаются свойства для секции main */
