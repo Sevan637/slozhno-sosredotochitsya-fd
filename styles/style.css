@@ -2,22 +2,14 @@
 
 .page {
   font-family: 'IBM Plex mono', serif;
-
-/*
-  max-inline-size: 767px;
   min-inline-size: 375px;
-  max-block-size: 1023px;
-  min-block-size: 668px;
-  */
- 
-  inline-size: 375px;
-  block-size: 668px;
   background-color: blue;
   /* background-image: url(../images/cover-image-dark.png); 
   object-fit: contain;
   background-position: center;
   background-attachment: fixed; */
   display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
   letter-spacing: var(--standart-letter-spacing);
 
@@ -238,3 +230,15 @@
   font-weight: var(--bold-weight);
 }
 
+@media (min-width: 768px) {
+  .page {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .header {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  
+
+}
