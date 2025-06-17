@@ -74,7 +74,7 @@
 .accent-decoration::before {
   content: 'REC';
   color: var(--accent-color);
-  line-height: 138.889%;
+  font-size: var(--text-font-size);
   font-weight: var(--normal-weight);
   position: absolute;
   right: 28px;
@@ -96,11 +96,15 @@
 
 .header__theme-menu {
   place-self: end;
-  margin-top: 39px;
+  margin-top: 63px;
 }
 
-.header__theme-menu-item:not(:last-of-type) {
-  margin-bottom: 13px; 
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
 }
 
 .header__theme-menu-button {
@@ -109,18 +113,21 @@
   border: none;
   font-size: var(--text-font-size);  
   font-weight: var(--normal-weight);
+  line-height: 1;
+  inline-size: 70px;
+  block-size: 26px;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgb(255, 0, 112, 0.4);
+  border: 1px solid rgb(255, 0, 112, 0.4);
 }  
 
 .header__theme-menu-button:focus {
-  outline: none;
+  border: none;
   text-decoration: underline solid var(--accent-color);
 }
 
@@ -134,11 +141,8 @@
 }
 
 .header-text {
-  font-size: var(--text-font-size);
-  font-weight: var(--bold-weight);
   padding: 0;
-  margin-top: 55px;
-  line-height: var(--standart-line-height);
+  margin-top: 53px;
   align-self: end;
   justify-self: start;
 }
@@ -153,7 +157,7 @@
   padding: 0 10px 0;
 }
 
-.main-section-title, .main-section-text .header-text {
+.main-section-title, .main-section-text, .header-text {
    font-size: var(--text-font-size);
    line-height: var(--standart-line-height);
    font-weight: var(--bold-weight);
@@ -195,11 +199,11 @@
 }
 
 
-.main-section-main-title, .main-section-secondary-title, p.main-section-text:not(:last-of-type) {
+.main-section-main-title, .main-section-secondary-title, .main-section-secondary-title-unique, p.main-section-text:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
-.main-section-title.title-decor:not(.main-section-secondary-title), .gallery-title {
+.main-section-title.title-decor:not(.main-section-secondary-title-unique), .gallery-title {
   margin-bottom: 10px;
 }
 
