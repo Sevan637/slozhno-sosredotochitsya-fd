@@ -251,8 +251,7 @@ p.main-section-text:not(:last-of-type) {
     padding: 20px 20px 183px;
   }
 
-  .accent-decoration,
-  .header__theme-menu,
+  .header-grid-div,
   .header-text {
     grid-column: 2;
   }
@@ -332,4 +331,27 @@ p.main-section-text:not(:last-of-type) {
     grid-column: -1 / -3;
     grid-row: 3;
   }
+}
+
+@media (orientation: landscape) {
+
+  /* Медиа для хидера  */ 
+
+  .header {
+    padding-bottom: 134px;
+  }
+
+.header__theme-menu {
+  grid-column: -1 / 1;
+    justify-self: center;
+    
+    
+}
+  .header__theme-menu-list {
+    flex-direction: row;
+    
+  }
+
+
+
 }
