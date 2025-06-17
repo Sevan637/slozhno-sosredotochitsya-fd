@@ -285,12 +285,33 @@ p.main-section-text:not(:last-of-type) {
   /* Медиа для мэйн */
   .main {
     gap: 80px;
+    padding: 0 20px 0; 
   }
 
+  .main-section:not(.main-section-unique) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .main-section-main-title {
+    grid-column: 1;
+  }
+
+  .grid-div {
+    grid-column: 2 / 4;
+  }
+
+
+
+
+
+
+  /* медиа стили для галереи*/
   .picture-gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr min-content 1fr;
     gap: 20px;
+
   }
 
   .gallery-image:nth-child(1) {
