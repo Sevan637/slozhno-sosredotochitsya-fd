@@ -7,9 +7,9 @@
   --main-heading-color: #DB00FF;
   --accent-color:#FF0070;
   --text-color: #F1B2CE; 
+  --background-image: url(../images/cover-image-dark.png);
   --main-heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-font-size: 18px;
-  --background-color: #000028;
   --bold-weight: 700;
   --normal-weight: 400;
   --standart-line-height: 1.3;
