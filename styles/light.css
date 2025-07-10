@@ -5,9 +5,9 @@
 */
 
 :root.theme-light {
-  --main-heading-color: #FFC2E6;
-  --accent-color:#FF8DCB;
-  --text-color: #353430; 
+  --main-heading-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
   --background-image: url(../images/cover-image-light.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -15,63 +15,54 @@
   */
 }
 
-
 @media (prefers-color-scheme: light) {
-
   :root {
-  --main-heading-color: #FFC2E6;
-  --accent-color:#FF8DCB;
-  --text-color: #353430; 
-  --background-image: url(../images/cover-image-light.png);
+    --main-heading-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
   }
 
   .theme-light .corner-decor::after {
     border-block-start: 1px solid var(--text-color);
-  border-inline-end: 1px solid var(--text-color);
+    border-inline-end: 1px solid var(--text-color);
   }
 
   .theme-light .corner-decor::before {
     border-block-end: 1px solid var(--text-color);
-  border-inline-start: 1px solid var(--text-color);
+    border-inline-start: 1px solid var(--text-color);
   }
 
-  
-.theme-light .accent-decoration::before {
-  content: '';
-}
+  .theme-light .accent-decoration::before {
+    content: "";
+  }
 
-.theme-light .main-section-main-title {
-  color: var(--text-color);
-}
+  .theme-light .main-section-main-title {
+    color: var(--text-color);
+  }
 
-.theme-light .accent-decoration::after{
-  display: none;
-}
+  .theme-light .accent-decoration::after {
+    display: none;
+  }
 
-
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
+  .theme-light .header__theme-menu-button {
+    color: var(--text-color);
+  }
 
   .theme-light .header__theme-menu-button_active {
     border: 1px solid var(--text-color);
   }
 
-  .theme-light .header__theme-menu-button:hover{
+  .theme-light .header__theme-menu-button:hover {
     border: 1px solid rgba(50, 49, 45, 0.4);
   }
   .theme-light .header__theme-menu-button:focus {
     outline: none;
     border: none;
     text-decoration: underline solid var(--text-color);
-
   }
 }
 
-
-
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-
 }
-

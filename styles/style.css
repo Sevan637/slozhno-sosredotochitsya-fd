@@ -4,10 +4,10 @@
   font-family: "IBM Plex mono", serif;
   min-inline-size: 375px;
   background-color: blue;
-  background-image: var(--background-image); 
+  background-image: var(--background-image);
   object-fit: contain;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: 1fr;
   letter-spacing: var(--standart-letter-spacing);
@@ -29,6 +29,8 @@
   padding: 0.625rem 0.625rem 4.125rem;
   object-fit: cover;
   position: relative;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .corner-decor::after {
@@ -228,8 +230,10 @@ p.main-section-text:not(:last-of-type) {
   align-items: center;
   inline-size: 100%;
   block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   padding: 0.625rem;
+
 }
 
 .footer-title {
@@ -395,6 +399,5 @@ p.main-section-text:not(:last-of-type) {
   .grid-div-section-unique {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
   }
 }
