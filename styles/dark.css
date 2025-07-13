@@ -17,39 +17,39 @@
 }
 
 .theme-dark .corner-decor::after {
-    border-block-start: 1px solid var(--accent-color);
-    border-inline-end: 1px solid var(--accent-color);
-  }
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
 
-   .theme-dark .corner-decor::before {
-    border-block-end: 1px solid var(--accent-color);
-    border-inline-start: 1px solid var(--accent-color);
-  }
+.theme-dark .corner-decor::before {
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
 
-  .theme-dark .accent-decoration::before {
-    content: "REC"; 
-  }
+.theme-dark .accent-decoration::before {
+  content: "REC";
+}
 
-   .theme-dark .main-section-main-title {
-    color: var(--accent-color);
-  }
+.theme-dark .main-section-main-title {
+  color: var(--accent-color);
+}
 
-  .theme-dark .accent-decoration::after {
-    display: block;
-  }
+.theme-dark .accent-decoration::after {
+  display: block;
+}
 
-  .theme-dark .header__theme-menu-button {
-    color: var(--accent-color);
-  }
+.theme-dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
 
- .theme-dark .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color);
-  }
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
 
-   .theme-dark .header__theme-menu-button:hover {
-    border: 1px solid var(--rgba-color);
-  }
- 
-  .theme-dark .header__theme-menu-button:focus::after {
-    background-color: var(--accent-color);
-  }
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid var(--rgba-color);
+}
+
+.theme-dark .header__theme-menu-button:focus::after {
+  background-color: var(--accent-color);
+}

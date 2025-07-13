@@ -119,21 +119,23 @@
 }
 
 .header__theme-menu-button:focus::after {
-  content: '';
+  content: "";
   display: block;
   inline-size: 100%;
   block-size: 1px;
   background-color: var(--accent-color);
   inset-inline-end: 0;
-
 }
 
-.header-title {
+.main-title {
   color: var(--main-heading-color);
   font-size: var(--main-heading-font-size);
-  text-shadow: 0.25rem 0.25rem 0 var(--accent-color);
   line-height: 83%;
   font-weight: var(--bold-weight);
+}
+
+.header .main-title {
+  text-shadow: 0.25rem 0.25rem 0 var(--accent-color);
   margin-block-start: 4.1563rem;
 }
 
@@ -208,7 +210,7 @@ p.main-section-text:not(:last-of-type) {
   margin-block-end: 1.25rem;
 }
 
-.grid-div-section-unique {
+.grid-box-section-unique {
   display: grid;
   gap: 1.25rem;
 }
@@ -242,15 +244,10 @@ p.main-section-text:not(:last-of-type) {
   min-block-size: 668px;
   position: relative;
   padding: 0.625rem;
-
 }
 
-.footer-title {
-  color: var(--main-heading-color);
-  font-size: var(--main-heading-font-size);
+.footer .main-title {
   text-shadow: 0.125rem 0.125rem 0 var(--accent-color);
-  line-height: 83%;
-  font-weight: var(--bold-weight);
 }
 
 /* Медиа запросы*/
@@ -273,13 +270,13 @@ p.main-section-text:not(:last-of-type) {
     grid-column: 2;
   }
 
-  .header-title {
+  .header .main-title {
     grid-column: -1 / 1;
     margin-block-start: 10.8125rem;
     margin-inline-start: -1.25rem;
   }
 
-  .header-footer-titles {
+  .main-title {
     --main-heading-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -316,7 +313,7 @@ p.main-section-text:not(:last-of-type) {
     grid-column: 1;
   }
 
-  .grid-div {
+  .grid-box {
     padding-inline-start: 0.4375rem;
     grid-column: 2 / 4;
     justify-self: end;
@@ -333,7 +330,7 @@ p.main-section-text:not(:last-of-type) {
     grid-column: 1;
   }
 
-  .grid-div-section-unique {
+  .grid-box-section-unique {
     grid-column: -1 / 1;
     grid-row: 2;
   }
@@ -345,7 +342,7 @@ p.main-section-text:not(:last-of-type) {
     gap: 1.25rem;
   }
 
-  .gallery-title {
+  .main-section-gallery .main-section-title.gallery-title {
     margin-block-end: 1.25rem;
   }
 
@@ -397,18 +394,18 @@ p.main-section-text:not(:last-of-type) {
     gap: 0.625rem;
   }
 
-  .header-title {
+  .header .main-title {
     margin-block-start: 17.1875rem;
   }
   .header-text {
     margin-block-start: 7rem;
   }
 
-  .grid-div {
+  .grid-box {
     padding-inline-start: 0;
   }
 
-  .grid-div-section-unique {
+  .grid-box-section-unique {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
