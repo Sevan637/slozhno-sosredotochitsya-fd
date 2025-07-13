@@ -8,6 +8,7 @@
   --accent-color:#FF0070;
   --text-color: #F1B2CE; 
   --background-image: url(../images/cover-image-dark.png);
+  --rgba-color: rgba(255, 0, 112, 0.4);
   --main-heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-font-size: 1.125rem;
   --bold-weight: 700;
