@@ -10,8 +10,8 @@
   --one-more-accent-color-fot-light-theme: #353430;
   --text-color: #353430;
    --classic-text-color: #353430;
+   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  --background-color: #fff1f7;
   --rgba-color: rgba(50, 49, 45, 0.4);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -34,8 +34,8 @@
     --one-more-accent-color-fot-light-theme: #353430;
     --text-color: #353430;
     --classic-text-color: #353430;
-    --background-image: url(../images/cover-image-light.png);
     --background-color: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
     --rgba-color: rgba(50, 49, 45, 0.4);
   }
 

@@ -124,7 +124,7 @@
   display: block;
   inline-size: 100%;
   block-size: 1px;
-  background-color: var(--accent-color);
+  background-color: var(--one-more-accent-color-fot-light-theme);
   inset-inline-end: 0;
 }
 
