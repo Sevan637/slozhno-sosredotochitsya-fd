@@ -174,12 +174,7 @@
   color: var(--accent-color);
 }
 
-.main-section-secondary-title {
-  color: inherit;
-}
-
 .secondary-title-advice {
-  color: inherit;
   font-weight: var(--normal-weight);
 }
 
