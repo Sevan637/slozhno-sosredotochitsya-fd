@@ -8,6 +8,7 @@
   --main-heading-color: #ffc2e6;
   --accent-color: #ff8dcb;
   --text-color: #353430;
+  --classic-text-color: #353430;
   --background-image: url(../images/cover-image-light.png);
   --rgba-color: rgba(50, 49, 45, 0.4);
   /* сохраните этот селектор в приведённом виде.
@@ -64,6 +65,7 @@
     --main-heading-color: #ffc2e6;
     --accent-color: #ff8dcb;
     --text-color: #353430;
+    --classic-text-color: #353430;
     --background-image: url(../images/cover-image-light.png);
     --rgba-color: rgba(50, 49, 45, 0.4);
   }

@@ -1,11 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: "IBM Plex mono", serif;
+  font-family: "IBM Plex mono", monospace, serif;
   min-inline-size: 375px;
   background-color: #000028;
   background-image: var(--background-image);
-  object-fit: cover;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   display: grid;
@@ -17,6 +17,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
+  color: var(--classic-text-color);
 }
 .header,
 .main {
@@ -187,19 +188,26 @@
   font-weight: var(--normal-weight);
 }
 
-.accent-decorated-word {
+.accent-decorated-link {
   text-shadow: 0.125rem 0.0938rem 0 var(--accent-color);
+  text-decoration: none;
+  position: relative;
 }
 
-.main-section-text-link {
+.accent-decorated-link:hover {
   text-decoration: none;
 }
 
-.main-section-text-link:hover {
-  text-decoration: underline solid var(--text-color);
+.accent-decorated-link:hover::after {
+   content: "";
+  display: block;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 1px;
+  background-color: var(--text-color);
+  inset-inline-end: 0;
 }
-
-.main-section-text-link:focus {
+.accent-decorated-link:focus {
   outline: 1px solid var(--text-color);
 }
 
@@ -397,6 +405,7 @@ p.main-section-text:not(:last-of-type) {
   .header .main-title {
     margin-block-start: 17.1875rem;
   }
+
   .header-text {
     margin-block-start: 7rem;
   }
