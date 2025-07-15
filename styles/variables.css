@@ -6,9 +6,11 @@
 :root {
   --main-heading-color: #db00ff;
   --accent-color: #ff0070;
+  --one-more-accent-color-fot-light-theme: #ff0070;
   --text-color: #f1b2ce;
   --classic-text-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
   --rgba-color: rgba(255, 0, 112, 0.4);
   --main-heading-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-font-size: 1.125rem;
